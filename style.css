@@ -1,0 +1,935 @@
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header and Navbar Stylings */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom: 2px solid gray;
+    border-radius: 30px;
+}
+
+header img {
+    padding-top: 0px;
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding-top: 25px;
+}
+
+header nav ul li a {
+    color: gold;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+    background-color: gold;
+    color: #000;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.book-button {
+    background-color: gold;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.book-button:hover {
+    background-color: orange;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Footer Stylings */
+
+footer {
+    color: gold;
+    border-top: 2px solid gray;
+    border-radius: 20px;
+}
+
+.footer-content {
+    display: flex;
+    padding: 20px 50px 15px 50px;
+}
+
+.footer-nav {
+    width: 40%;
+}
+
+.footer-socials {
+    width: 40%;
+}
+
+.footer-content ul {
+    display: flex;
+}
+
+.footer-content ul li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: gold;
+}
+
+.footer-nav h3, 
+.footer-socials h3 {
+    color: orange;
+}
+
+.footer-nav ul, 
+.footer-socials ul {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav ul li {
+    font-size: 15px;
+}
+
+.footer-nav ul li:hover {
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.footer-socials ul li a {
+    font-size: 35px;
+}
+
+.footer-socials ul li a:hover {
+    color: orange;
+}
+
+.footer-copyright {
+    width: 20%;
+    display: block;
+    justify-content: end;
+    align-items: end;
+}
+
+/* Home Page Stylings */
+
+.body-home {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("Project-Files/home-background.jpg");
+    background-position: center;
+    background-size: cover; 
+    color: gold;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.home-content-text {
+    width: 90%;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 25px;
+    margin-right: 150px;
+    margin-left: 50px;
+}
+
+.home-content-text h2 {
+    text-align: justify;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 15px;
+}
+
+.home-content-logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content-logo img{
+    border-radius: 50%;
+}
+
+.home-book-button {
+    width: 100%;
+    margin: 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-book-button a {
+    background-color: gold;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.home-book-button a:hover {
+    background-color: #000;
+    color: gold;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+}
+
+/* Destinations Page Styling */
+
+.destinations-background {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+}
+
+#destinations {
+    color: gold;
+}
+
+#destinations h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#destinations p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px 20px 20px 40px;
+}
+
+.dest-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.dest {
+    color: gold;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.dest dt {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.dest dd {
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+/* Fleet Page Styling */
+
+.body-fleet {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("./Project-Files/Fleet-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.airline {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: gold;
+}
+
+.boeing, 
+.airbus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    border-right: 2px solid gray;
+    border-left: 2px solid gray;
+    border-radius: 30px;
+}
+
+.boeing img, 
+.airbus img {
+    width: 60%;
+}
+
+.check-fleet-button button {
+    background: transparent;
+    border: none;
+}
+
+.check-fleet-button button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: gold;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Boeing Fleet Styling */
+
+.body-boeing-fleet {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("./Project-Files/Boeing-fleet-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.boeing-747, 
+.boeing-777x, 
+.boeing-787, 
+.boeing-737-max {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    padding: 20px;
+    width: 60%;
+    border: 2px solid gray;
+    border-radius: 30px;
+    margin: 30px;
+}
+
+.boeing-747 h1, 
+.boeing-777x h1, 
+.boeing-787 h1, 
+.boeing-737-max h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.boeing-747 img, 
+.boeing-777x img, 
+.boeing-787 img, 
+.boeing-737-max img {
+    width: 90%;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+/* Boeing & Airbus Fleet Styling */
+
+.airplane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Airbus Fleet Styling */
+
+.body-airbus-fleet {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("./Project-Files/Airbus-fleet-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.airbus-a38o, 
+.airbus-a35o, 
+.airbus-a33o, 
+.airbus-a32o {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    padding: 20px;
+    width: 60%;
+    border: 2px solid gray;
+    border-radius: 30px;
+    margin: 30px;
+}
+
+.airbus-a38o h1, 
+.airbus-a35o h1, 
+.airbus-a33o h1, 
+.airbus-a32o h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.airbus-a38o img, 
+.airbus-a35o img, 
+.airbus-a33o img, 
+.airbus-a32o img {
+    width: 90%;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+/* About Page Styling */
+
+.body-about {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.85)), url("Project-Files/About-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about-nav {
+    position: fixed;
+    top: 0;
+    left: 200px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 20px;
+}
+
+.about-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.about-nav ul li {
+    list-style: none;
+    border: 1px solid orange;
+    color: orange;
+    border-radius: 15px;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.about-nav ul li:hover {
+    border: 1px solid gray;
+    color: gold;
+    box-shadow: 2px 2px 2px 2px gray;
+    font-weight: 600;
+}
+
+.about-container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.about-container-header .about-slogan {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: #C0C0C0;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border: 80px solid transparent;
+    border-image: url(./Project-Files/Slogan-Border-bg.jpg) 180;
+}
+
+.about-container-header .about-departure-logo {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #C0C0C0;
+    font-size: 100px;
+}
+
+.about-container-header .about-arrival-logo {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #C0C0C0;
+    font-size: 100px;
+}
+
+.about-container-header .about-departure-logo i, 
+.about-container-header .about-arrival-logo i {
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 50px;
+}
+
+.history, 
+.mission, 
+.fleet, 
+.team {
+    display: flex;
+    margin: 100px 10px;
+    border-bottom: 2px solid gray;
+    padding: 20px;
+}
+
+.history {
+    border-top: 2px solid gray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.history-1, 
+.mission-1, 
+.fleet-1, 
+.team-1 {
+    width: 40%;
+    padding: 30px;
+}
+
+.history-1 h1, 
+.mission-1 h1, 
+.fleet-1 h1, 
+.team-1 h1 {
+    color: #C0C0C0;
+    font-size: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic, bold;
+}
+
+.history-2, 
+.mission-2, 
+.fleet-2, 
+.team-2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-right: 30px;
+    border: 40px solid transparent;
+    border-image: url(./Project-Files/border-1.avif) 90;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.mission, 
+.team {
+    flex-direction: row-reverse;
+}
+
+.mission-2, 
+.team-2 {
+    margin-left: 30px;
+    border-image: url(./Project-Files/border-2.avif) 80;
+}
+
+.fleet-2, 
+.team-2 {
+    flex-direction: column;
+}
+
+.fleet-2 a, 
+.team-2 a {
+    background-color: #C0C0C0;
+    color: #000;
+    padding: 15px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.fleet-2 a:hover, 
+.team-2 a:hover {
+    background-color: #000;
+    color: #C0C0C0;
+    font-weight: 600;
+}
+
+.team {
+    border: none;
+}
+
+/* Team Page Styling */
+
+.body-team {
+    background-color: #000;
+}
+
+.team-header {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-header h1 {
+    color: #C0C0C0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+    border: 100px solid transparent;
+    border-image: url(./Project-Files/Team-Border-bg.jpg) 150;
+}
+
+.team-header h2, 
+.staff-container-header h2 {
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 550;
+    padding: 100px;
+}
+
+.team-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.members {
+    width: 30%;
+    margin: 10px 30px; 
+    color: #C0C0C0;
+    padding: auto;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.members img {
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.members h2, 
+.members p {
+    padding: 20px;
+    font-style: italic;
+}
+
+.staff-members-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-members {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; 
+    color: #C0C0C0;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.staff-members img {
+    width: 100%;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.staff-members h2, 
+.staff-members p {
+    padding: 20px;
+    font-style: italic;
+}
+
+.staff-container-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Contact Page Styling */
+
+.body-contact {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.85)), url("Project-Files/Contact-bg.jpg");
+    background-size: cover;
+    background-position: center;  
+    color: #C0C0C0;
+}
+
+.contact-title {
+    padding: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.location-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 30px;
+}
+
+.map-location {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    border-right: 1px solid gray;
+    border-radius: 20px;
+}
+
+.contact-form {
+    width: 50%;
+    border-left: 1px solid gray;
+    border-radius: 20px;
+    padding-left: 100px;
+}
+
+.contact-details h2,
+.contact-form h2, 
+.contact-details h3,
+.contact-form h3 {
+    padding: 10px;
+}
+
+.contact-details p {
+    padding: 30px 10px 10px 150px;
+}
+
+.map-location .map iframe {
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+input, 
+textarea {
+    outline: none;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    width: 70%;
+    background-color: #303030;
+    color: #C0C0C0;
+    border: none;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+input:focus, 
+textarea:focus {
+    border: 2px solid #C0C0C0;
+    border-radius: 10px;
+}
+
+.form-field-holder label {
+    position: absolute;
+    color: #C0C0C0;
+    left: 850px;
+    cursor: text;
+    transition: .3s ease-in-out;
+}
+
+.lbl-1 {
+    top: 360px;
+}
+
+input:focus + .lbl-1, 
+input:valid + .lbl-1 {
+    color: #fff;
+    font-size: 12px;
+    top: 330px;
+}
+
+.lbl-2 {
+    top: 435px;
+}
+
+input:focus + .lbl-2, 
+input:valid + .lbl-2 {
+    color: #fff;
+    font-size: 12px;
+    top: 405px;
+}
+
+.lbl-3 {
+    top: 510px;
+}
+
+input:focus + .lbl-3, 
+input:valid + .lbl-3 {
+    color: #fff;
+    font-size: 12px;
+    top: 480px; 
+}
+
+.lbl-4 {
+    top: 588px;
+}
+
+input:focus + .lbl-4, 
+input:valid + .lbl-4 {
+    color: #fff;
+    font-size: 12px;
+    top: 556px; 
+}
+
+.lbl-5 {
+    top: 660px;
+}
+
+textarea:focus + .lbl-5, 
+textarea:valid + .lbl-5 {
+    color: #fff;
+    font-size: 12px;
+    top: 630px;
+}
+
+.contact-submit-button {
+    padding: 12px 20px;
+    background-color: #C0C0C0;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contact-submit-button:hover {
+    background-color: #303030;
+    color: #C0C0C0;
+}
+
+/* Booking Page Styling */
+
+.body-booking {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.8)), url("./Project-Files/Booking-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.booking h1 {
+    color: #C0C0C0;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-details {
+    background-color: #000;
+    color: #C0C0C0;
+    display: block;
+    margin: 10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: .5px 1px 2px 4px #303030;
+}
+
+.booking-details:focus {
+    border-radius: 10px;
+    border: 2px solid #C0C0C0;
+    transition: 1s ease-in-out;
+}
+
+.booking-form-labels {
+    color: #C0C0C0;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert();
+}
+
+.booking-button {
+    margin: 50px 50px 50px 20px;
+    padding: 10px 20px;
+}
+
+.booking-button button {
+    width: 100%;
+    background-color: #C0C0C0;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.booking-button button:hover {
+    background-color: #000;
+    color: #C0C0C0;
+}

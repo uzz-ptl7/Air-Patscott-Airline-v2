@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR PATSCOTT - Book-Flight</title>
+</head>
+
+<body class="body-booking">
+
+    <header>
+        <img src="./Project-Files/Air-patscott-logo.png" width="150" height="100">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./destinations.html">Destinations</a></li>
+                <li><a href="./fleet.html">Fleet</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>                
+            </ul>       
+        </nav>
+    </header>
+
+    <main>
+        <div class="booking">
+            
+            <h1>Book A Flight</h1>
+            
+            <form action="#" method="post">
+                <label class="booking-form-labels">From</label>
+                <select class="booking-details" required>
+                    <option value="" selected>-- Select Country of Departure --</option>
+                    <option>Toronto Pearson Intl Airport, Canada </option>
+                    <option>Montréal–Trudeau Intl Airport, Canada</option>
+                    <option>Vancouver Intl Airport, Canada</option>
+                    <option>Beijing Capital Intl Airport, China</option>
+                    <option>Hefei Xinqiao Intl Airport, China</option>
+                    <option>Addis Ababa Bole Intl Airport, Ethiopia</option>
+                    <option>Dire Dawa Intl Airport, Ethiopia</option>
+                    <option>Cairo Intl Airport, Egypt</option>
+                    <option>Paris Charles de Gaulle Intl Airport, France</option>
+                    <option>Paris Orly Intl Airport, France</option>
+                    <option>Mumbai Chhatrapati Shivaji Maharaj Intl Airport, India</option>
+                    <option>Delhi Indira Gandhi Intl Airport, India</option>
+                    <option>Tokyo Haneda Intl Airport, Japan</option>
+                    <option>Casablanca Mohammed V Intl Airport, Morocco</option>
+                    <option>Kuala Lumpur Intl Airport, Malaysia</option>
+                    <option>Amsterdam Schiphol Intl Airport, Netherlands</option>
+                    <option>Islamabad Intl Airport, Pakistan</option>
+                    <option>Karachi Jinnah Intl Airport, Pakistan</option>
+                    <option>Doha Hamad Intl Airport, Qatar</option>
+                    <option>Kigali Intl Airport, Rwanda</option>
+                    <option>Cape Town Intl Airport, South Africa</option>
+                    <option>Durban King Shaka Intl Airport, South Africa</option>
+                    <option>Johannesburg OR Tambo Intl Airport, South Africa</option>
+                    <option>Port Elizabeth Chief Dawid Stuurman Intl Airport, South Africa</option>
+                    <option>Singapore Changi Intl Airport, Singapore</option>
+                    <option>Zurich Intl Airport, Switzerland</option>
+                    <option>Geneva Intl Airport, Switzerland</option>
+                    <option>Istanbul Intl Airport, Turkiye</option>
+                    <option>Ankara Esenboğa Intl Airport, Turkiye</option>
+                    <option>Dubai Intl Airport, UAE</option>
+                    <option>Abu Dhabi Zayed Intl Airport, UAE</option>
+                    <option>London Heathrow Intl Airport, UK</option>
+                    <option>London Gatwick Intl Airport, Uk</option>
+                    <option>Newyork John F. Kennedy Intl Airport, USA</option>
+                    <option>Miami Intl Airport, USA</option>
+                </select>
+
+                <label  class="booking-form-labels">To</label>
+                <select class="booking-details" required>
+                    <option value="" selected>-- Select Country of Arrival --</option>
+                    <option>Toronto Pearson Intl Airport, Canada </option>
+                    <option>Montréal–Trudeau Intl Airport, Canada</option>
+                    <option>Vancouver Intl Airport, Canada</option>
+                    <option>Beijing Capital Intl Airport, China</option>
+                    <option>Hefei Xinqiao Intl Airport, China</option>
+                    <option>Addis Ababa Bole Intl Airport, Ethiopia</option>
+                    <option>Dire Dawa Intl Airport, Ethiopia</option>
+                    <option>Cairo Intl Airport, Egypt</option>
+                    <option>Paris Charles de Gaulle Intl Airport, France</option>
+                    <option>Paris Orly Intl Airport, France</option>
+                    <option>Mumbai Chhatrapati Shivaji Maharaj Intl Airport, India</option>
+                    <option>Delhi Indira Gandhi Intl Airport, India</option>
+                    <option>Tokyo Haneda Intl Airport, Japan</option>
+                    <option>Casablanca Mohammed V Intl Airport, Morocco</option>
+                    <option>Kuala Lumpur Intl Airport, Malaysia</option>
+                    <option>Amsterdam Schiphol Intl Airport, Netherlands</option>
+                    <option>Islamabad Intl Airport, Pakistan</option>
+                    <option>Karachi Jinnah Intl Airport, Pakistan</option>
+                    <option>Doha Hamad Intl Airport, Qatar</option>
+                    <option>Kigali Intl Airport, Rwanda</option>
+                    <option>Cape Town Intl Airport, South Africa</option>
+                    <option>Durban King Shaka Intl Airport, South Africa</option>
+                    <option>Johannesburg OR Tambo Intl Airport, South Africa</option>
+                    <option>Port Elizabeth Chief Dawid Stuurman Intl Airport, South Africa</option>
+                    <option>Singapore Changi Intl Airport, Singapore</option>
+                    <option>Zurich Intl Airport, Switzerland</option>
+                    <option>Geneva Intl Airport, Switzerland</option>
+                    <option>Istanbul Intl Airport, Turkiye</option>
+                    <option>Ankara Esenboğa Intl Airport, Turkiye</option>
+                    <option>Dubai Intl Airport, UAE</option>
+                    <option>Abu Dhabi Zayed Intl Airport, UAE</option>
+                    <option>London Heathrow Intl Airport, UK</option>
+                    <option>London Gatwick Intl Airport, Uk</option>
+                    <option>Newyork John F. Kennedy Intl Airport, USA</option>
+                    <option>Miami Intl Airport, USA</option>
+                </select>
+
+                <label class="booking-form-labels">Date</label>
+                <input type="date" id="inputdate" name="inputdate" class="booking-details" required>
+
+                <label class="booking-form-labels">Class</label>
+                <select class="booking-details" required>
+                    <option value="" selected>-- Select Class --</option>
+                    <option>First-Class</option>
+                    <option>Business</option>
+                    <option>Premium</option>
+                    <option>Economy</option>
+                </select>
+    
+                <div class="booking-button">
+                    <button type="submit" class="booking-button">Book this Flight</button>
+                </div>
+
+            </form>
+        
+        </div>
+
+    </main>
+
+    <footer class="booking-footer">
+            
+        <div class="footer-content">
+
+            <div class="footer-content footer-nav">
+                <h3><u>Quick Links </u>: &emsp;</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./destinations.html">Destinations</a></li>
+                    <li><a href="./fleet.html">Fleet</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./booking.html">Book a Flight</a></li>                   
+                </ul>
+            </div>
+
+            <div class="footer-content footer-socials">
+                <h3><u>Contact Us </u>: &emsp;</h3>
+                <ul>
+                    <li><a href="https://wa.me/250738019704"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/shadow_artist22/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="mailto:uzair07patel@gmail.com"><i class="fa-solid fa-square-envelope"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content footer-copyright">
+                <img src="./Project-Files/Air-patscott-logo.png" width="150px" height="100px">
+                <p>&copy; 2024 AIR PATSCOTT</p>
+            </div>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>
